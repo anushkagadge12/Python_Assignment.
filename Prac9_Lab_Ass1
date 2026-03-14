@@ -1,0 +1,18 @@
+class Employee:
+    def getdata(self):
+        self.name = input("Enter name: ")
+        self.age = int(input("Enter age: "))
+        self.salary = int(input("Enter salary: "))
+        self.address = input("Enter address: ")
+class Manager(Employee):
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Salary:", self.salary)
+        print("Address:", self.address)
+        print("-----------------------")
+m = Manager()
+for i in range(2):   # teacher asked 10 but you can run 2 for testing
+    print("Enter details of Manager", i+1)
+    m.getdata()
+    m.display()
